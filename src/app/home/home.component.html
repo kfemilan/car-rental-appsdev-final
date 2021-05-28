@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="category" id="add">
+        <app-add-car></app-add-car>
+    </div>
+    <div class="category" id="available">
+        <div>
+            <h1>Available Cars</h1>
+        </div>
+        <div *ngFor="let car of cars | async">
+            <app-available-cars
+            [car]=car
+            ></app-available-cars>
+        </div>
+    </div>
+    <div class="category" id="rented">
+        <h1>Rented Cars</h1>
+        <div *ngFor="let car of rented | async">
+            <app-rented-cars
+            [car]=car
+            ></app-rented-cars>
+        </div>
+    </div>
+</div>

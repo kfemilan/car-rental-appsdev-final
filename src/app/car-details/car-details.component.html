@@ -1,0 +1,50 @@
+<div class="body">
+    <div class="wrapper">
+        <div class="details">
+            <div id="overview">
+                <div id="back">
+                    <input type="button" value="< Back" routerLink="">
+                </div>
+                <img [src]="car.image">
+                <div id="details">
+                    <div id="name">{{car.brand + ' ' + car.model | uppercase}}</div>
+                    <div id="color">{{car.color | titlecase}}</div>
+                    <div id="price" *ngIf="!car.isRented; else rentedBlock">{{'₱' + car.price + '/day'}}</div>
+                    <ng-template #rentedBlock>
+                        <div id="total">{{'₱' + calculateTotal()}}</div>
+                        <div id="return">Return Date: {{car.returnDate.seconds*1000 | date}}</div>
+                    </ng-template>
+                </div>
+                <div class="section" id="rbutton">
+                    <div id="return"  *ngIf="car.isRented; else elseBlock">
+                        <input type="button" value="Return" (click)="returnCar()">
+                    </div>
+                    <ng-template #elseBlock>
+                        <div id="rent">
+                            <input type="button" value="Rent" (click)="rentCar()">
+                        </div>
+                    </ng-template>
+                    <div id="delete">
+                        <input type="button" value="Delete" (click)="deleteCar()">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div id="reviewbody">
+                <div id="header">
+                    <h1>Reviews</h1> 
+                    <h2> {{totalRating | number:'1.0-1'}}/5</h2> 
+                </div>
+                <div id="allreviews" *ngIf="reviewLength>0; else noReview">
+                    <div *ngFor="let review of reviews | async">
+                        <app-review [review]=review></app-review>
+                    </div>
+                </div>
+                <ng-template #noReview>
+                    <div>No Reviews yet!</div>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

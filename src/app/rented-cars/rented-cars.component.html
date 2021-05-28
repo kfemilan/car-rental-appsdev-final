@@ -1,0 +1,21 @@
+<div class="wrapper">
+    <div class="section" id="detail-wrapper">
+        <div id="pic">
+            <img [src]="car.image">
+        </div>
+        <div id="details">
+            <div id="name">{{car.brand + ' ' + car.model | titlecase}}</div>
+            <div id="color">{{car.color | titlecase}}</div>
+            <div id="price">{{'₱' + calculateTotal()}}</div>
+            <div id="return">{{car.returnDate.seconds*1000 | date}}</div>
+        </div>
+    </div>
+    <div class="section" id="rbutton">
+        <div id="details">
+            <input type="button" (click)="onSelect()" value="Details">
+        </div>
+        <div id="return">
+            <input type="button" (click)="returnCar()" value="Return">
+        </div>
+    </div>
+</div>

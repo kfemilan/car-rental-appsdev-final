@@ -1,0 +1,45 @@
+<div class="body">
+    <div class="wrapper">
+        <div class="details">
+            <div id="overview">
+                <div id="back">
+                    <input type="button" value="< Back" routerLink="">
+                </div>
+                <img [src]="car.image">
+                <div id="details">
+                    <div id="name">{{car.brand + ' ' + car.model | uppercase}}</div>
+                    <div id="color">{{car.color | titlecase}}</div>
+                    <div id="price">{{'₱' + car.price + '/day'}}</div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div id="reviewbody">
+                <div id="header"><h1>Leave a Review!</h1></div>
+                <div class="form">
+                    <form name="addForm">
+                            <div class="section" id="username">
+                                <p>Name</p>
+                                <input type="text" name="name" #name autocomplete="off">
+                            </div>
+                            <div class="section" id="review">
+                                <p>Review</p>
+                                <textarea id="reviewfield" #review rows=10></textarea>
+                            </div> 
+                            <div class="section" id="buttons">
+                                <div>
+                                    <button (click)="skip()">Skip</button>
+                                </div>
+                                <div>
+                                    <input type="reset" value="Clear" (click)="clear()">
+                                </div>
+                                <div>
+                                    <input type="button" value="Add" (click)="addReview()">
+                                </div>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

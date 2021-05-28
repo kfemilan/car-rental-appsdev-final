@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "carrental-240b8": {
+      "hosting": {
+        "carrental3": [
+          "carrental-240b8"
+        ]
+      }
+    }
+  }
+}

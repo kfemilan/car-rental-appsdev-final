@@ -1,0 +1,83 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+h1{
+    width: 80%;
+    align-self: flex-start;
+    color: white;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.section{
+    width: 80%;
+}
+
+#buttons{
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: end; */
+}
+
+#buttons input{
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buttons input[type=button]{
+    background-color: #FFFCFF;
+    color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+#buttons input[type=button]:hover{
+    background-color: #fffcff7a;
+}
+
+#buttons input[type=reset]{
+    background-color: red;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+
+#buttons input[type=reset]:hover{
+    background-color: rgba(255, 0, 0, 0.493);
+}
+
+input[type=text], input[type=number]{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #262626;
+    font-weight: bold;
+    color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+input[type=text]:focus, input[type=number]:focus{
+    border-bottom: 5px solid #60b2e5;
+}
+
+
+
+

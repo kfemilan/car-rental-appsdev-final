@@ -1,0 +1,181 @@
+.body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    border-radius: 30px;
+    margin: auto;
+    background-color: #262626;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 95%;
+    width: 95%;
+    color: white;
+}
+
+.details {
+    background-color: #255C99;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#details {
+    align-self: flex-start;
+}
+
+#name {
+    font-size: 2.2vw;
+    font-weight: 900;
+}
+
+#color {
+    font-size: 1.5vw;
+}
+
+#price {
+    font-size: 1.3vw
+}
+
+.reviews {
+    width: 70%;
+    height: 100%;
+}
+
+#reviewbody {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+#header {
+    height: 10%;
+}
+
+#overview img{
+    background-color: #262626;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 30px;
+    object-fit: contain;
+    transition: 200ms ease-in-out;
+}
+
+#back input{
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #255C99;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    font-size: 1vw;
+}
+
+#back input:hover{
+    color: #262626;
+}
+
+.section{
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    width: 100%;
+}
+
+#buttons{
+    width: 100%;
+    height: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#buttons input{
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#buttons input[type=button]{
+    background-color: #FFFCFF;
+    color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+#buttons input[type=button]:hover{
+    background-color: #fffcff7a;
+}
+
+#buttons input[type=reset]{
+    background-color: red;
+    color: white;
+    transition: 200ms ease-in-out;
+}
+
+#buttons input[type=reset]:hover{
+    background-color: rgba(255, 0, 0, 0.493);
+}
+
+input[type=text]{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #262626ad;
+    font-weight: bold;
+    color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+textarea {
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 5px solid #262626ad;
+    font-weight: bold;
+    color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+input[type=text]:focus, textarea:focus{
+    border-bottom: 5px solid #60b2e5;
+}
+
+button{
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFCFF;
+    background-color: #262626;
+    transition: 200ms ease-in-out;
+}
+
+button:hover{
+    background-color: #181818;
+}

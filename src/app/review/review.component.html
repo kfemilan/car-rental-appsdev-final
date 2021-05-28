@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="top">
+        <div class="details">
+            <div id="name">
+                {{review.name | titlecase}}
+            </div>
+            <div id="rating">
+                {{review.rating + '/5'}}
+            </div>
+        </div>
+        <div class="chunk">
+            <input type="button" value="{{chunkDisplay}}" (click)="displayChunk()">
+        </div>
+    </div>
+    <div class="bottom" *ngIf="!chunk; else chunkBlock">
+        {{review.review}}
+    </div>
+    <ng-template #chunkBlock>
+        <div class="bottom">
+            {{review.chunked}}
+        </div>
+    </ng-template>
+</div>

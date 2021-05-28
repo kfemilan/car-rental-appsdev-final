@@ -1,0 +1,144 @@
+.body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    border-radius: 30px;
+    margin: auto;
+    background-color: #262626;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 95%;
+    width: 95%;
+    color: white;
+}
+
+.details {
+    background-color: #255C99;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+#details {
+    align-self: flex-start;
+}
+
+#name {
+    font-size: 2.2vw;
+    font-weight: 900;
+}
+
+#color {
+    font-size: 1.5vw;
+}
+
+#price {
+    font-size: 1.3vw
+}
+
+#return, #total {
+    font-size: 1vw
+}
+
+.reviews {
+    width: 70%;
+    height: 100%;
+}
+
+#header {
+    width: 25%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header h2{
+    color: rgb(255, 226, 64)
+}
+
+#reviewbody {
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+
+#overview img{
+    background-color: #262626;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 30px;
+    object-fit: contain;
+    transition: 200ms ease-in-out;
+}
+
+#rbutton{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#rbutton div{
+    margin: 0 5px;
+}
+
+#rent input, #return input{
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #FFFCFF;
+    color: #262626;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    font-size: .8vw;
+}
+
+#rent input:hover, #return input:hover{
+    background-color: #fffcff9d;
+}
+
+#delete input{
+    background-color: red;
+    color: white;
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    font-size: .8vw;
+}
+
+#delete input:hover{
+    background-color: rgb(128, 0, 0);
+}
+
+#back input{
+    height: 4vh;
+    width: 4vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #255C99;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    font-size: 1vw;
+}
+
+#back input:hover{
+    color: #262626;
+}
